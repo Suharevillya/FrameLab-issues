@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Open FrameLab
+    url: https://framelab.fly.dev
+    about: The app itself.

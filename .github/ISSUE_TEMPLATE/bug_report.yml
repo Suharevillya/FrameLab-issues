@@ -1,0 +1,34 @@
+name: Report a bug
+description: Something in FrameLab doesn't work or gives a wrong result.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: did
+    attributes:
+      label: What did you do?
+      description: The steps, e.g. "opened the SSAB joint example, set e = 10 mm on node 4".
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened instead?
+      description: An error message, a wrong number (with the value you expected and its source), a screenshot.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Page and browser
+      placeholder: e.g. Steel space, LTB page · Chrome 141 on Windows
+  - type: textarea
+    id: project
+    attributes:
+      label: Project file (optional)
+      description: Export the project (.fl) from the start page and drop it here, so the case can be reproduced.
